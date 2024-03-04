@@ -1,9 +1,9 @@
 {
-  "name": "oi",
+  "name": "@oi/ui",
   "description": "Web components following open-wc recommendations",
   "license": "MIT",
   "author": "Torleif Halseth",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "main": "dist/src/index.js",
   "module": "dist/src/index.js",
