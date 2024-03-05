@@ -1,8 +1,8 @@
-import { html, css, LitElement } from 'lit';
+import { html, css, LitElement, TemplateResult, CSSResult } from 'lit';
 import { property } from 'lit/decorators.js';
 
 export class OiButton extends LitElement {
-  static styles = css`
+  static styles: CSSResult = css`
     :host {
       display: block;
       padding: 25px;
@@ -18,7 +18,7 @@ export class OiButton extends LitElement {
     this.counter += 1;
   }
 
-  render() {
+  render(): TemplateResult<1> {
     return html`
       <h2>${this.header} Nr. ${this.counter}!</h2>
       <button @click=${this.__increment}>increment</button>
